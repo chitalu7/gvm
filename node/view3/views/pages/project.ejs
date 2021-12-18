@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Chitalu's Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Optional and Good Form meta tags to use -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Chitalu Mumba">
+
+    <!--External CSS Link-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container-field" style="border:none; margin:auto 25%; background-color:#fdc5be;">
+
+         <div class="main-content-container" class="w3-container">
+            <h1>Project 1 - Easy Entry</h1>
+                <br>
+                    <h2>About Easy Entry</h2>
+                <p>As the COVID pandemic 
+                As the COVID pandemic continues, stores require customers to show proof of vaccination at the point of entry. 
+                To provide fast, easy and convenient entry, we created a QR code generator and scanner for  both customers and store owners</p>
+                <br>        
+                    <h2>The Problem at Hand</h2>
+                    <p>Easy Entry provides fast, easy and convenient store entry for customers and store owners.
+                    The prototype of Easy Entry uses an API to pull up and display the status of a customer upon a store scanning a QR code. 
+                    The application web-based, responsive, and accessible to users on any web connected device. The prototype also provides 
+                    basic ADA compliance that will be further built on in later versions.</p>
+                <br>
+                    <h2>Understanding the Solution</h2>
+                    <p>To get a good understanding or the problem and before working towards building a solution, we worked on we worked on Use Case scanrio 
+                        and User Stories. This was done from the perspective of the customers and stores owners. </p>
+
+                    <p>Diagrams further outlined our understanding of what we needed the core function of the app to be and provided insight into some of the 
+                        inner workings of the components that would be needed for the build. Some of the diagrams used were the Activity Flow diagrams, 
+                        Sequence diagrams, Entity Relationship Diagrams, and Class Responsibility Collaborator.</p>
+                       
+                        <hr>
+                            
+                       <div class="row">
+                            <div class="col-sm">
+                                <figure class="img-fig">                            
+                                    <img id="imgView1" onClick="onImgClick(this.id, this.src)"   src="../images/customer-flow.jpg" alt="customer flow image"/>
+                                    <figcaption>Customer Flow Diagram</figcaption>
+                                 </figure>
+                            </div>
+                            
+                            <div class="col-sm">
+                                <figure class="img-fig">                      
+                                    <img id="imgView2" onClick="onImgClick(this.id, this.src)" src="../images/store-flow.jpg" alt="store flow image" />
+                                    <figcaption>Store Flow Diagram</figcaption>
+                                </figure> 
+                            </div>                           
+                          </div>
+                          
+                            <br>
+
+
+                          <div class="row">
+                            <div class="col-sm">
+                                <figure class="img-fig">                      
+                                    <img id="imgView3" onClick="onImgClick(this.id, this.src)" src="../images/sequence-diagram.jpg" class="img-fluid" alt="sequence diagram image" />
+                                    <figcaption>Sequence Diagram</figcaption>
+                                </figure> 
+                            </div> 
+                            
+                            
+                            
+                            <div class="col-sm">
+                                <figure class="img-fig">                            
+                                    <img id="imgView4" onClick="onImgClick(this.id, this.src)" src="../images/erd.jpg" class="img-fluid" alt="ERD image" />
+                                    <figcaption>ERD Diagram</figcaption>
+                                 </figure>
+                            </div>                                                                                  
+                          </div>
+
+                          <br>
+                          
+
+                          <div class="row">
+                            <div class="col-sm">
+                                <figure class="img-fig">                            
+                                    <img id="imgView5" onClick="onImgClick(this.id, this.src)" src="/images/crc-diagram.jpg" class="img-fluid" alt="CRC image" />
+                                    <figcaption>CRC Diagram</figcaption>
+                                 </figure>
+                            </div>                                                      
+                          </div>
+                          
+                            <br>
+                            <hr>
+                            <br>
+
+                            <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+
+                            <div class="sec-div">
+                    <h2>Setting the Stage</h2>
+                    <p>In the world of web development, there are many tools and platforms that developers use. 
+                        The choices can vary depending on what stage of development the project is in. Based on the system requirements we established for the 
+                        Easy Entry app, we decided to use. </p>
+                    <p>For the purposes of prototyping and deployment, our team used Microsoft Azure and Google App Engine to deploy the prototypes for the
+                        customer and store apps respectively. Both apps are web based. 
+                        </p>
+                    <p>For the customer app, we used C# with an internal SQL database that we migrated to an Azure cloud database, and we deployed the app on Azure websites. 
+                        For the store app side of the project, we used React and NodeJS, deployed the app on Google App Engine.  </p>
+                    <p>We decided to use Microsoft's Visual Studio 2019 and Visual Studio Code to build the two apps. The customer app was built using a .NET web app, that 
+                        was scaffolded in Visual Studio 2019.
+                    </p>
+
+                    <h2>The Journey </h2>
+                    <p>The project took the effort of six team members. Each member had varying degrees of experience as developers, and each had their strengths and
+                        weaknesses. After, deciding on the project we wanted to work on, and the vision, we started working on the project. The team met 3 times a 
+                        week for 4 hours and we would break up into smaller groups of two to work on tasks and modules. 
+                    </p>
+                    <p>This was my first time working on a web application with a team of six developers. With no prior experience to working in teams no bigger than two, 
+                        my initial challenge was finding out how a team of developers actually get coding done. As we continued meeting, we learned more about each other 
+                        and worked off our strengths. To work remotely on the project, our choice of tool for communcation was Zoom and Microsoft Teams. The screen 
+                        sharing feature in both Zoom and Teams helped us share our screens and at any one time depending on what needed to get done, we would have one 
+                        person share the screen, and everybody else make contributions as we moved through the tasks to complete.  
+                    </p>
+
+                    <p>A big part of application development is understanding the core requirements and functionality that a client is asking for. Once the team fully 
+                        understood what our core requirements were, we were easily able to split the task and module builds between us. Each team mate contributed by 
+                        completing the required tasks given to them. If the client of the app was a third party, out team would have had to meet frequently with the customer 
+                        with each working iteration of the app to ensure the requirements and specifications are being met. 
+                    </p>
+
+                    <p>The primary part of the project was divided into two core parts - the customer app and the store app. Within the custoer app, two team mates 
+                        focused on the functinoal code and two other team mates were focused on visual design of the app. I worked on the store side of the app with another 
+                        team mate and we focused on building a scanner app that would read a QR code generated by the customer app and use the data contained in the QR code to 
+                        populate on the one page app and display customer information about their vaccination status.
+                        <br>
+                        Each week, the leadership roles rotated and we each took up our roles as best we could. 
+                    </p>
+
+                    <p>Another important aspect that was helpful throughout the entire build of the project was documentation. The requirements and specifications were 
+                        clearly outlined in the Software Requ
+                    </p>
+
+                    <h2>Wrapping It App</h2>
+                         <p>The vision we set out to accomplish was achieved.
+                             To bring it all to a close, the two part of the group project, the customer and store side of the app were published online. The store scanner which was 
+                             what I had worked on, was integrated into the customer app using a basic hyperlinked button to allow for easy testing and demoing.   
+                             </p>
+
+                    <p>With time as a constraint, we decided to leave out some features for future iterations. For instance, a sign-in form for the customer app, and an added-on security 
+                        measure for the store app to verify that a customer is vaccinated.   
+                        </p>                
+
+                    <p>Overall, the entire experience of building an app as part of a team was a learning experience of the planning, orgranizing and effort 
+                        needed to build an app. There was as lot to be learned from how to setup the environment, debugging, integrating modules, migrating databases, and
+                    deploying. </p>
+
+                    <p>The most challenging part of the project was migrating the customer app with an internal database to an Azure Cloud database. Completing this part of the 
+                        build took almost three hours. This was because we had to figure out how to make sure the local database version was compatible with the Azure Cloud database 
+                        we were working with.  
+                         </p>
+
+                    <p>The app development process and journey was well documented. This proved to be extremely useful in that it helped us keep our vision in mind 
+                        of what a working prototype we were looking to build and even more importantly prevented creep programming.   
+                        </p>
+
+                        <p>Here are some snapshots of the app at a glance.  
+                            </p>
+
+                            <hr>
+<div class="row">
+                            <div class="col-sm">
+                                <figure class="img-fig">                            
+                                    <img id="imgView6" onClick="onImgClick(this.id, this.src)"   src="../images/easy-entry-app-a.jpg" alt="easy entyr landing page" style="width:100%; max-width:100%" />
+                                    <figcaption>Easy Entry Customer App Landing Page</figcaption>
+                                 </figure>
+                            </div> 
+                        </div>
+
+                        <br>
+
+                            <div class="row">
+
+                            <div class="col-sm">
+                                <figure class="img-fig">                      
+                                    <img id="imgView7" onClick="onImgClick(this.id, this.src)" src="../images/easy-entry-app-b.jpg" alt="easy entry customer details" style="width:100%; max-width:100%"  />
+                                    <figcaption>Easy Entry Customer Details</figcaption>
+                                </figure> 
+                            </div>
+
+                          </div>
+                          
+                            <br>
+                            
+                            <div class="row">
+
+                                <div class="col-sm">
+                                    <figure class="img-fig">                      
+                                        <img id="imgView8" onClick="onImgClick(this.id, this.src)" src="../images/easy-entry-app-c.jpg" alt="easy entry customer qr generator" style="width:100%; max-width:100%"/>
+                                        <figcaption>Easy Entry Customer QR Generator</figcaption>
+                                    </figure> 
+                                </div>
+    
+                              </div>
+                              
+                                <br>
+
+                                <div class="row">
+
+                                    <div class="col-sm">
+                                        <figure class="img-fig">                      
+                                            <img id="imgView9" onClick="onImgClick(this.id, this.src)" src="../images/qr-scanner.jpg" alt="easy entry store qr scanner app" style="width:100%; max-width:100%"/>
+                                            <figcaption>Easy Entry Store QR Scanner</figcaption>
+                                        </figure> 
+                                    </div>
+        
+                                  </div>
+                                  
+                                    <br>
+
+                            <hr>
+                            <br>
+
+
+
+
+
+                        <h2>A Final Verdict</h2>
+                    <p>IS BUILDNIG AN APP IN A TEAM SOMETIHNG I WOULD WANT TO DO ANYTIME SOON OR EVER AGAIN!?
+                        <b>Yes!!! BY ALL MEANS!!!</b>
+                        </p> 
+
+                        
+                </div>         
+                       
+                    <p>Buidling projects alone is great, but nothing beats working with a team of dedicated developers who have a common vision in mind.
+                        Given a chance, I would jump right into another group project to better refine the process and apply the things I learnt in this on this project.  
+                        </p>
+
+                    <p>There is a saying that goes like this <br/>
+                        <span><i>"If you want to go fast, go alone. If you want to go far go together."</i></span>
+                        <br/>
+                        <br/>
+                        Buidling projects alone is great, but building a large robust app alone would really take its tool and time on you. But builidng an app in a team 
+                        jsut makes things so much easier. <br/>
+                    </p>
+                        <p>In a team environment, everyone gets to pitch in on a solution making the project manageable and faster to build. There is also a certain satisfaction 
+                            that comes with completing a project together.
+                        </p>
+                        <p>
+                        The experience of working in a team is much richer as well in that you get to learn a little from everyone involved. We all walked away learning about setting up 
+                        environments, scaffolding Visual Studio Projects, coding C# and JavaScript, using ReactJS and NodeJS, setting up a variety of backend servers to meet our purposes, 
+                        and the joy that comes with overcoming hurdles and working out bugs in our code together. I would say this to anyone looking to start coding or any kind of development. 
+                        You learn faster and move faster in a team.</p>
+
+                        <p>Application development is group projects is very important skill to have. In a group effort, team members get to give each other feedback and carry each other 
+                            when the project hits a wall. I feel group projects should emphasized at the start of any education or career as a software developer because the reality 
+                            of the industry in itself is that most developers work in teams. My single greatest takeway, there is strength in numbers.
+                        </p>                                                
+
+                        <p>
+                        Given a chance, I would jump right into another group project to better refine the process and apply the things I learnt in this on this project.  
+                        </p>
+
+                        <h2>What Comes Next... </h2>
+                        <p>I decided to start looking for group projects online that I could be a part of to get better at working in teams. I am going to be looking into being both part of team 
+                            effort projects, and leading projects. I also decided to have more online presence on different media platforms to just share my journey into working towards becoming 
+                            a DevOp. I am really looking forward to the coming year of 2022.   
+                        </p>
+
+                        
+
+
+            </div>       
+
+	 <br>
+
+<h4><a href="/">Return to Portfolio </a></h4>
+<br>
+</div>
+
+    <!--SCRIPTS-->
+    <script src="/dependencies/sails.io.js"></script>
+    <!--SCRIPTS END-->
+
+
+</html>
